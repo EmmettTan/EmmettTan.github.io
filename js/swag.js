@@ -4,6 +4,6 @@ var myText = document.getElementById("helloText");
 myButton.addEventListener('click', doSomething, false)
 
 function doSomething() {
-	myText.textContent = "hello, world!";
+	//myText.textContent = "hello, world!";
 }
 
