@@ -13,17 +13,15 @@
 <div id="mainContent">
 <p id="helloText">?</p>
 <button id="clickButton" class="buttonStyle">click me</button>
+<audio controls>
+  <source src="audio/EMP-2.wav" type="audio/wav">
+</audio>
 </div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
+<script src="js/swag.js">
 </script>
+
+
+
 
 </body>
 </html>
