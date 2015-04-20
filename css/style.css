@@ -1,10 +1,15 @@
-#mainContent {
+#description {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: xx-large;
 	font-weight: bold;
 	background-color: #E3F0FB;
 	border-radius: 4px;
 	padding: 10px;
+	text-align: center;
+}
+
+#audio-section {
+	background-color: #e79231;
 	text-align: center;
 }
 
