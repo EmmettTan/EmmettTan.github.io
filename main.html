@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
-
+	
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  	$("button").click(function(){
+	    	  		$("p").hide();
+	    		});
+			});
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
-		<title>Hello...</title>
+		<title>Emmett Tan</title>
 	</head>
+	
 	<body>
 		<script src="js/swag.js"></script>
 		<div id="description">
@@ -20,15 +28,11 @@
 				at the University of British Columbia. What defines me most is my love
 				for creating music and exploring the outdoors. 
 			</p>
-			
 			<button id="clickButton" class="buttonStyle">
 				click me
 			</button>
-			
 			<br>
 			<br>
-			
-			
 		</div>
 		<div id = "audio-section">
 			<h3>
@@ -38,17 +42,23 @@
 				  <source src="audio/EMP-2.wav" type="audio/wav">
 			</audio>
 		</div>
-		
-		<br>
-		<br>
+		<br><br>
 		<div id = "contact">
-			<button id="resumeButton" class="buttonStyle">
-				Resume
-			</button>
-			<button id="emailButton" class="buttonStyle">
+			<h3>
+				Resume and Contact
+			</h3>
+			<a href="#openModal"><button class="buttonStyle">Resume</button></a>
+			<button id="button" class="buttonStyle">
 				Email Me
 			</button>
+			<div id="openModal" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Modal Box</h2>
+					<iframe src="Docs/Emmett-Resume.pdf" height=auto width=auto></iframe>	
+				</div>
+			</div>
 		</div>
-		
 	</body>
+	
 </html>
