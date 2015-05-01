@@ -6,7 +6,17 @@
 	border-radius: 4px;
 	padding: 10px;
 	text-align: center;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	
 }
+
+#description-background {
+	background-image: url("../images/CoopDeepCoveHiking.jpg");
+	height: 720px;
+}
+
 
 #audio-section {
 	background-color: #e79231;
