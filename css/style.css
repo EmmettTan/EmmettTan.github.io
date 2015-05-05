@@ -3,18 +3,21 @@
 	font-size: xx-large;
 	font-weight: bold;
 	background-color: #E3F0FB;
-	border-radius: 4px;
+	border-radius: 45px;
 	padding: 10px;
 	text-align: center;
 	width: 500px;
+	height: 263px;
 	margin-right: auto;
 	margin-left: auto;
-	
+	position: relative;
+	top: 25%;
 }
 
 #description-background {
 	background-image: url("../images/CoopDeepCoveHiking.jpg");
 	height: 720px;
+	margin: auto;
 }
 
 
