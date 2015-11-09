@@ -2,48 +2,125 @@
 <html lang="en-us">
 	
 	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta charset="utf-8">
 		<title>Emmett Tan</title>
+
+		<script src="js/angular.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/functions.js" type="text/javascript"></script>
 	</head>
 	
 	<body>
-		<script src="js/swag.js"></script>
-		<div id="description-background">
-			<div id="description">
-				<h3 id="TitleHeading">
-					Emmett Tan
-				</h3>
-				<p>
-					Welcome to my personal website! The main purpose of this page is to 
-					showcase my resume, various software projects, and piano recordings. 
-					A little bit about me: I am currently a computer engineering student
-					at the University of British Columbia. What defines me most is my love
-					for creating music and exploring the outdoors. 
-				</p>
-				<button id="clickButton" class="buttonStyle">
-					click me
-				</button>
-				<br>
-				<br>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Brand</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">Link</a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			      <form class="navbar-form navbar-left" role="search">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-default">Submit</button>
+			      </form>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">Link</a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="container">
+			<div class="col-xs-12">
+				<div class="jumbotron description center-block">
+					<h3>Emmett Tan</h3>
+					<p>
+						Welcome to my personal website! The main purpose of this page is to 
+						showcase my resume, various software projects, and piano recordings. 
+						A little bit about me: I am currently a computer engineering student
+						at the University of British Columbia. What defines me most is my love
+						for playing piano and discovering new music. 
+					</p><br>
+				</div>
 			</div>
 		</div>
-		<div id = "audio-section">
-			<h3>
-				Music
-			</h3>
-			<audio controls>
-				  <source src="audio/EMP-2.wav" type="audio/wav">
-			</audio>
+		<div class="container link-buttons">
+			<div class="center-block row-fluid">
+				<a href="Docs/Emmett-Resume.pdf"><button class="link-button btn btn-transparent">Resume</button></a>
+				<a href="https://github.com/EmmettTan"><button class="link-button btn btn-transparent ">Github</button></a>
+				<a href="https://soundcloud.com/emmett-tan-1"><button class="link-button btn btn-transparent">Soundcloud</button></a>
+				<a href="mailto:emmett.tan@alumni.ubc.ca"><button class="link-button btn btn-transparent">Email Me</button></a>
+			</div>
 		</div>
-		<br><br>
-		<div id = "contact">
-			<h3>
-				Resume and Contact
-			</h3>
-			<a href="Docs/Emmett-Resume.pdf"><button class="buttonStyle">Resume</button></a>
-			<a href="mailto:emmett.tan@alumni.ubc.ca"><button id="button" class="buttonStyle">Email Me</button></a>
-		</div>
+
+		<div class="container">
+			<div class="jumbotron description center-block">
+				<h3>Personal Projects</h3>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p><br>
+			</div>
+		<!-- <div class="container">
+			<div class="col-xs-12">
+				<div class="audio-section jumbotron center-block">
+					<h3>
+						Music
+					</h3>
+					<audio controls>
+						<source src="audio/EMP-2.wav" type="audio/wav">
+					</audio>
+				</div>
+			</div>
+		</div>	 -->
+		<!-- <div class="container">
+			<div id = "contact">
+				<h3>
+					Resume and Contact
+				</h3>
+				<a href="Docs/Emmett-Resume.pdf"><button class="buttonStyle">Resume</button></a>
+				<a href="mailto:emmett.tan@alumni.ubc.ca"><button id="button" class="buttonStyle">Email Me</button></a>
+			</div>
+		</div> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 	
 </html>

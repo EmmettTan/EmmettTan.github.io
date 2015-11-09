@@ -1,87 +1,64 @@
-#description {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	
-	background-color: #E3F0FB;
-	
-	border-radius: 45px;
-	padding: 10px;
-	text-align: center;
-	
-	height: 263px;
-	width: 500px;
-	
-	position: relative;
-	top: 25%;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#description-background {
-	background-image: url("../images/CoopDeepCoveHiking.jpg");
+body{
+	background: url(../images/NorthernLights2.jpg) 50% 0 fixed;
+	background-size: cover;
 	background-repeat: no-repeat;
-	
-	height: 720px;
-	width: 960px;
-	
-	left: 50%;
-	right: 50%;
-	
-	margin: auto;
+	background-attachment: fixed;
 }
 
+.description{
+	width: 600px;
+	display: block;
 
-#audio-section {
-	background-color: #e79231;
+	background-color: #eeeeee;
+	text-align: center;
+
+	margin-top: 200px;
+	background-color: rgba(224, 224, 224, 0.8);
+}
+
+.link-button{
+	
+}
+
+.link-buttons{
+	width: 600px;
 	text-align: center;
 }
 
-#contact {
+.audio-section{
+	display: block;
+	width: 600px;
+
+	background-color: #eeeeee;
 	text-align: center;
+
+	margin-top: 300px;
+	background-color: rgba(224, 224, 224, 0.6);
 }
 
-
-
-html {
-	overflow-y: scroll;
+.btn-transparent{
+	/*background-color: Transparent;*/
 }
 
-h3 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
+#northernLights1{
+	background: url(../images/NorthernLights1.jpg) 50% 0 fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
 }
 
-p {
-	font-size: small;	
-	width: 450px;
-	margin-left: auto;
-	margin-right: auto;
-}
+#northernLights2{
+	height: auto; 
 
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
 }
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-
