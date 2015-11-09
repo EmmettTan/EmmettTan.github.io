@@ -12,10 +12,12 @@ body{
 	background-color: #eeeeee;
 	text-align: center;
 
-	margin-top: 100px;
+	margin-top: 50px;
 	background-color: rgba(224, 224, 224, 0.8);
+}
 
-
+.description p{
+	font-size: 17px;
 }
 
 .link-button{
@@ -42,11 +44,42 @@ body{
 	/*background-color: Transparent;*/
 }
 
+.section-divider{
+	height: 100px;
+	text-align: center;
+
+}
+
+.section-divider .section-title{
+	font-size: 22px;
+	display: inline-block;
+	line-height: 4.5em;
+}
+
+.item-listing{
+	background-color: rgba(224, 224, 224, 0.6);
+}
+
 #section1{
 	background: url(../images/NorthernLights2.jpg) 50% 0 fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: 0% 0%;
+	height: 700px;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#section2{
+	background: url(../images/Piano.jpg) 50% 0 fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 70% 30%;
 	height: auto;  
     margin: 0 auto; 
     width: 100%; 
