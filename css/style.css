@@ -1,8 +1,8 @@
 body{
-	background: url(../images/NorthernLights2.jpg) 50% 0 fixed;
+	/*background: url(../images/NorthernLights2.jpg) 50% 0 fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
 .description{
@@ -12,8 +12,10 @@ body{
 	background-color: #eeeeee;
 	text-align: center;
 
-	margin-top: 200px;
+	margin-top: 100px;
 	background-color: rgba(224, 224, 224, 0.8);
+
+
 }
 
 .link-button{
@@ -40,8 +42,8 @@ body{
 	/*background-color: Transparent;*/
 }
 
-#northernLights1{
-	background: url(../images/NorthernLights1.jpg) 50% 0 fixed;
+#section1{
+	background: url(../images/NorthernLights2.jpg) 50% 0 fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -53,12 +55,6 @@ body{
     padding: 100px 0;
 }
 
-#northernLights2{
-	height: auto; 
-
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 200px 0;
+#personal-projects{
+	margin-top: 40px;
 }

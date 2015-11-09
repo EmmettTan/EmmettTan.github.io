@@ -15,7 +15,7 @@
 	</head>
 	
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -33,66 +33,39 @@
 			      <ul class="nav navbar-nav">
 			        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
 			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
-			          </ul>
-			        </li>
 			      </ul>
 			      <form class="navbar-form navbar-left" role="search">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
-			        </div>
-			        <button type="submit" class="btn btn-default">Submit</button>
 			      </form>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Link</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			          </ul>
-			        </li>
-			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		<div class="container">
-			<div class="col-xs-12">
-				<div class="jumbotron description center-block">
-					<h3>Emmett Tan</h3>
-					<p>
-						Welcome to my personal website! The main purpose of this page is to 
-						showcase my resume, various software projects, and piano recordings. 
-						A little bit about me: I am currently a computer engineering student
-						at the University of British Columbia. What defines me most is my love
-						for playing piano and discovering new music. 
-					</p><br>
+		<div id="section1">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="jumbotron description center-block">
+						<h3>Emmett Tan</h3>
+						<p>
+							Welcome to my personal website! The main purpose of this page is to 
+							showcase my resume, various software projects, and piano recordings. 
+							A little bit about me: I am currently a computer engineering student
+							at the University of British Columbia. What defines me most is my love
+							for playing piano and discovering new music. 
+						</p><br>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container link-buttons">
-			<div class="center-block row-fluid">
-				<a href="Docs/Emmett-Resume.pdf"><button class="link-button btn btn-transparent">Resume</button></a>
-				<a href="https://github.com/EmmettTan"><button class="link-button btn btn-transparent ">Github</button></a>
-				<a href="https://soundcloud.com/emmett-tan-1"><button class="link-button btn btn-transparent">Soundcloud</button></a>
-				<a href="mailto:emmett.tan@alumni.ubc.ca"><button class="link-button btn btn-transparent">Email Me</button></a>
+			<div class="container link-buttons">
+				<div class="center-block row-fluid">
+					<a href="Docs/Emmett-Resume.pdf"><button class="link-button btn btn-transparent">Resume</button></a>
+					<a href="https://github.com/EmmettTan"><button class="link-button btn btn-transparent ">Github</button></a>
+					<a href="https://soundcloud.com/emmett-tan-1"><button class="link-button btn btn-transparent">Soundcloud</button></a>
+					<a href="mailto:emmett.tan@alumni.ubc.ca"><button class="link-button btn btn-transparent">Email Me</button></a>
+				</div>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="jumbotron description center-block">
+			<div class="jumbotron center-block" id='personal-projects'>
 				<h3>Personal Projects</h3>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
