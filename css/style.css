@@ -24,6 +24,16 @@ body{
 	
 }
 
+.project-button{
+	background-color: #575C5E;
+	color: #FFFFFF;
+}
+
+.exp-button{
+	background-color: #879194;
+	color: #FFFFFF;
+}
+
 .link-buttons{
 	max-width: 600px;
 	text-align: center;

@@ -1,0 +1,228 @@
+#header{
+	width: 1000px;
+	background-color: #FFFFCC;
+}
+
+#mainContent{
+	width: 1000px;
+}
+
+#mainContent, #navigationMenu, .productList, .productRow, .product{
+	background-color: #eeeeee;
+}
+
+#cartButton{
+	margin-top: 25px;
+}
+
+#navigationMenu{
+	margin-top: 50px;
+}
+
+.menuItem{
+	width: 100px;
+	height: 40px;
+
+	text-align: center;
+	line-height: 40px;
+}
+
+.menuButton{
+	width: 100px;
+}
+
+.menuItem:hover{
+	font-style: oblique;
+}
+
+.itemName{
+	text-align: center;
+	font-size: 24px;
+
+}
+
+.product img{
+	max-width: 200px; 
+	height: 200px;
+	opacity: 1;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartOverlay img{
+	max-width: 200px; 
+	height: 100px;
+	top: 40px;
+	left: 68px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.addBtn{
+	position:absolute;
+	visibility: hidden;
+	left: 40px;
+	bottom: 80px;
+}
+
+.removeBtn{
+	position:absolute;
+	visibility: hidden;
+	left: 100px;
+	bottom: 80px;
+}
+
+
+.product{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.product:hover{
+	background-color: #E6E6DA;
+}
+
+.product:hover .priceLabel{
+	visibility: visible;
+	background-color:rgba(0,0,0,0.4);
+	z-index: 2;
+}
+
+.product:hover .productImg{
+	opacity: 0.4;
+}
+.product:hover .cartOverlay img{
+	visibility: visible;
+	z-index: 3;
+}
+
+.product:hover .addBtn{
+	visibility: visible;
+	z-index: 4;
+}
+
+.product:hover .removeBtn{
+	visibility: visible;
+	z-index: 4;
+}
+
+
+.priceLabel{
+	visibility: hidden;
+	text-align: center;
+
+	position: absolute;
+	background-color: #eeeeee;
+	height: 50px;
+	width: 200px;
+
+	left: 21px;
+
+	line-height: 50px;
+	margin-top: -50px;
+	z-index: 0;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.productRow{
+	margin-bottom: 10px;
+}
+
+/* TODO, findout why visibility: hidden doesnt work */
+.product:hover .addBtnHidden .addBtn{
+	z-index: -1;
+}
+
+.product:hover .removeBtnHidden .removeBtn{
+	z-index: -1;
+}
+
+.img-container { position: relative; }
+
+.img-container .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modalCartPriceTotal{
+	text-align: left;
+}
+
+.cartItem {
+	margin-bottom: 15px;
+}
+
+.cartItem img{
+	max-width: 150px; 
+	height: 100px;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartItem .addBtnHidden.modalAddBtn{
+	visibility: hidden;
+}
+
+.cartItem .removeBtnHidden.modalRemoveBtn{
+	visibility: hidden;
+}
+
+.modalCartQuantityText{
+	top: 22px;
+}
+
+.modalItemImg{
+	vertical-align: middle;
+}
+
+
+
+.modalAddBtn{
+    margin-top: 35px;
+}
+
+.modalRemoveBtn{
+	margin-top: 35px;
+}
+
+.modal-dialog .container {
+    width: auto;
+}
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container {
+	margin-right: auto;
+ 	margin-left: auto;
+ 	max-width: 1000px; /* or 950px */
+}
+
+.modalBody .container{
+	max-width: 768px;
+}
+
+.footer{
+	width: 1000px;
+	background-color: #FFCC99;
+
+	height: 75px;
+	
+
+	text-align: center;
+}
+
+.footerContent{
+	line-height: 75px;
+	font-size: 21px;
+}
