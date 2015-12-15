@@ -21,15 +21,17 @@ body{
 }
 
 .link-button{
-	
+	margin-bottom: 4px;
 }
 
 .project-button{
 	background-color: #575C5E;
 	color: #FFFFFF;
+	margin-bottom: 4px;
 }
 
 .exp-button{
+	margin-bottom: 4px;
 	background-color: #879194;
 	color: #FFFFFF;
 }
