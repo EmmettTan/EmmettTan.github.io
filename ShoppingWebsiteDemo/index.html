@@ -33,7 +33,7 @@
 		      	<form class="form-inline" id="cartModalForm" role="form" onshow="showCashTotal()">
 					<div ng-repeat="item in cart | filterProductsArray" class="row cartItem">
 						<div class="col-xs-3">
-							<img class="modalItemImg" ng-src="{{products[item.key]['url']}}" alt="{{products[item.key]['url']}}">
+							<img class="modalItemImg" ng-src="{{imageUrls[item.key]}}" alt="{{imageUrls[item.key]}}">
 						</div>
 						<div class="col-xs-5 modalCartQuantityText" >
 							<div class="outOfStock" ng-hide="!(products[item.key]['quantity'] + cart[item.key]['quantity'] == 0)">OUT OF STOCK</div>
@@ -124,7 +124,7 @@
 								<div ng-repeat="product in products | filterProductsArray" ng-if="$index < getNumProducts()" class="col-xs-4 product">
 									<div class="img-container" ng-class="{'addBtnHidden': !productInStock(product.key), 'removeBtnHidden': !itemExistsInCart(product.key)}"  id="product.key">
 										<div class="productImg">
-											<img ng-src="{{product.url}}" alt="{{product.url}}">
+											<img ng-src="{{imageUrls[product.key]}}" alt="{{imageUrls[product.key]}}">
 										</div>
 										<div class="cartOverlay">
 											<img ng-src="images/cart.png" alt="images/cart.png">

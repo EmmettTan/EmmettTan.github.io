@@ -25,6 +25,20 @@ mainModule.controller('cart-products-controller', ['$scope', '$interval', functi
 	$scope.products = {};
 	$scope.XMLSendFinished = false;
 	
+	$scope.imageUrls = [];
+	$scope.imageUrls["Box1"] = "images/Box1_$10.png";
+	$scope.imageUrls["Box2"] = "images/Box2_$20.png";
+	$scope.imageUrls["Clothes1"] = "images/Clothes1_$20.png";
+	$scope.imageUrls["Clothes2"] = "images/Clothes2_$30.png";
+	$scope.imageUrls["Jeans"] = "images/Jeans_$50.png";
+	$scope.imageUrls["Keyboard"] = "images/Keyboard_$20.png";
+	$scope.imageUrls["KeyboardCombo"] = "images/KeyboardCombo_$40.png";
+	$scope.imageUrls["Mice"] = "images/Mice_$20.png";
+	$scope.imageUrls["PC1"] = "images/PC1_$350.png";
+	$scope.imageUrls["PC2"] = "images/PC2_$400.png";
+	$scope.imageUrls["PC3"] = "images/PC3_$300.png";
+	$scope.imageUrls["Tent"] = "images/Tent_$100.png";
+
 	var stop; //we assign the countdownFn interval to stop
 	var numTries = 0; //stop after certain threshold
 	var maxTries = 10;
