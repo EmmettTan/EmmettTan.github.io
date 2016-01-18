@@ -39,6 +39,68 @@ mainModule.controller('cart-products-controller', ['$scope', '$interval', functi
 	$scope.imageUrls["PC3"] = "images/PC3_$300.png";
 	$scope.imageUrls["Tent"] = "images/Tent_$100.png";
 
+	$scope.products["Box1"] = {};
+	$scope.products["Box2"] = {};
+	$scope.products["Clothes1"] = {};
+	$scope.products["Clothes2"] = {};
+	$scope.products["Jeans"] = {};
+	$scope.products["Keyboard"] = {};
+	$scope.products["KeyboardCombo"] = {};
+	$scope.products["Mice"] = {};
+	$scope.products["PC1"] = {};
+	$scope.products["PC2"] = {};
+	$scope.products["PC3"] = {};
+	$scope.products["Tent"] = {};
+
+	$scope.products["Box1"]["quantity"] = 5;
+	$scope.products["Box1"]["price"] = 10;
+	$scope.products["Box1"]["src"] = "images/Box1_$10.png";
+
+
+	$scope.products["Box2"]["quantity"] = 5;
+	$scope.products["Box2"]["price"] = 20;
+	$scope.products["Box2"]["src"] = "images/Box2_$20.png";
+
+	$scope.products["Clothes1"]["quantity"] = 5;
+	$scope.products["Clothes1"]["price"] = 20;
+	$scope.products["Clothes1"]["src"] = "images/Clothes1_$20.png";
+
+	$scope.products["Clothes2"]["quantity"] = 5;
+	$scope.products["Clothes2"]["price"] = 30;
+	$scope.products["Clothes2"]["src"] = "images/Clothes2_$30.png";
+
+	$scope.products["Jeans"]["quantity"] = 5;
+	$scope.products["Jeans"]["price"] = 50;
+	$scope.products["Jeans"]["src"] = "images/Jeans_$50.png";
+
+	$scope.products["Keyboard"]["quantity"] = 5;
+	$scope.products["Keyboard"]["price"] = 20;
+	$scope.products["Keyboard"]["src"] = "images/Keyboard_$20.png";
+
+	$scope.products["KeyboardCombo"]["quantity"] = 5;
+	$scope.products["KeyboardCombo"]["price"] = 40;
+	$scope.products["KeyboardCombo"]["src"] = "images/KeyboardCombo_$40.png";
+
+	$scope.products["Mice"]["quantity"] = 5;
+	$scope.products["Mice"]["price"] = 20;
+	$scope.products["Mice"]["src"] = "images/Mice_$20.png";
+
+	$scope.products["PC1"]["quantity"] = 5;
+	$scope.products["PC1"]["price"] = 350;
+	$scope.products["PC1"]["src"] = "images/PC1_$350.png";
+
+	$scope.products["PC2"]["quantity"] = 5;
+	$scope.products["PC2"]["price"] = 400;
+	$scope.products["PC2"]["src"] = "images/PC2_$400.png";
+
+	$scope.products["PC3"]["quantity"] = 5;
+	$scope.products["PC3"]["price"] = 300;
+	$scope.products["PC3"]["src"] = "images/PC3_$300.png";
+
+	$scope.products["Tent"]["quantity"] = 5;
+	$scope.products["Tent"]["price"] = 100;
+	$scope.products["Tent"]["src"] = "images/Tent_$100.png";
+
 	var stop; //we assign the countdownFn interval to stop
 	var numTries = 0; //stop after certain threshold
 	var maxTries = 10;
@@ -167,9 +229,9 @@ mainModule.controller('cart-products-controller', ['$scope', '$interval', functi
 		
 
 		return function(){
-			if(!isEmpty($scope.cart)){
-				alert("Checking server for inventory availability and price changes...");
-			}
+			// if(!isEmpty($scope.cart)){
+			// 	alert("Checking server for inventory availability and price changes...");
+			// }
 			numTries++;
 			//updating the price each time we refetch data
 			var keys = Object.keys($scope.cart);
@@ -185,8 +247,8 @@ mainModule.controller('cart-products-controller', ['$scope', '$interval', functi
 					numTries = 0;
 					console.log(xhr.getResponseHeader("Content-type"));
 					if(xhr.getResponseHeader("Content-type") == 'application/json; charset=utf-8'){
-						$scope.products = JSON.parse(xhr.responseText);
-						compareCartWithProducts();
+						//$scope.products = JSON.parse(xhr.responseText);
+						//compareCartWithProducts();
 						$scope.XMLSendFinished = true;
 						if(!isEmpty($scope.cart))$scope.showCashTotal();
 						$scope.startCountdown();
